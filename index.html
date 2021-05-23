@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Rental Exercise</title>
-    <link rel="icon" href="car.png" />
 
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental Exercise</title>
+  <link rel="icon" href="car.png" />
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
-  </head>
-  <body class="p-5">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body class="p-5">
+  <div>
     <header class="pb-5">
-<h1>ACME Car Rental</h1>
+      <h1>ACME Car Rental</h1>
     </header>
 
     <main class="pt-3">
-    <form>
-<p>
-    <label for="pickupDate">Pickup Date: </label>
-    <input type="date" id="pickupDate"> 
-</p>
+      <form>
+        <div>
 
-<p>
-    <label for="numberOfDays">Number of Days:</label>
-    <input type="number" id="numberOfDays">
-</p>
+          <div>
+        <p>
+          <label for="pickupDate">Pickup Date: </label>
+          <input type="date" id="pickupDate">
+        </p>
 
-<p>
-    OPTIONS: <br>
-    <input type="checkbox" id="electronicTollTag"> 
-    <label>Electronic Toll Tag ($3.95/day)</label>
+        <p>
+          <label for="numberOfDays">Number of Days:</label>
+          <input type="number" id="numberOfDays">
+        </p>
+      </div>
 
-    <br>
-    <input type="checkbox" id="GPS">
-    <label>GPS ($2.95/day)</label>
+      <div>
+        <p>
+          OPTIONS: <br>
+          <input type="checkbox" id="electronicTollTag">
+          <label>Electronic Toll Tag ($3.95/day)</label>
 
-    <br>
-    <input type="checkbox" id="roadsideAssistance">
-    <label>Roadside Assistance ($2.95/day)</label>
-</p>
+          <br>
+          <input type="checkbox" id="GPS">
+          <label>GPS ($2.95/day)</label>
 
-<p>
-    Under 25
-    <div>
+          <br>
+          <input type="checkbox" id="roadsideAssistance">
+          <label>Roadside Assistance ($2.95/day)</label>
+        </p>
+      </div>
 
-    <label for="radioNo">No</label>
-    <input type="radio" id="radioNo">
+      <div>
+        <p>
+          Under 25
+        
 
-    <label for="radioYes">Yes</label>  
-    <input type="radio" id="radioYes" checked> 
+          <label for="radioNo">No</label>
+          <input type="radio" id="radioNo">
 
-    </div>  
-</p>
-    <input type="button" value="Estimate Total Cost" id="totalCostBtn">
-    </form>
+          <label for="radioYes">Yes</label>
+          <input type="radio" id="radioYes" checked>
 
-    <!-- RESULTS -->
-    <p id="carRental"></p>
-    <p id="options"></p>
-    <p id="surcharge"></p>
-        <br>
-    <p id="totalCost"></p>
+       
+        </p>
+      </div>
+
+        <div>
+        <input type="button" value="Estimate Total Cost" id="totalCostBtn">
+        </div>  
+      </div>
+      </form>
+
+      <!-- RESULTS -->
+      <p id="carRental"></p>
+      <p id="options"></p>
+      <p id="surcharge"></p>
+      <br>
+      <p id="totalCost"></p>
     </main>
 
     <footer>
 
     </footer>
-    <!-- BOOTSTRAP & JQUERY JS FILES -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <!-- BOOTSTRAP & JQUERY JS FILES -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
