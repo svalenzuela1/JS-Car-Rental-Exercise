@@ -32,26 +32,45 @@
 </p>
 
 <p>
-    <label id="numberOfDays">Number of Days:</label>
+    <label for="numberOfDays">Number of Days:</label>
     <input type="number" id="numberOfDays">
 </p>
 
 <p>
     OPTIONS: <br>
-    <input type="checkbox"> Electronic Toll Tag ($3.95/day)
-    <input type="checkbox"> GPS ($2.95/day)
-    <input type="checkbox"> Roadside Assistance ($2.95/day)
+    <input type="checkbox" id="electronicTollTag"> 
+    <label>Electronic Toll Tag ($3.95/day)</label>
+
+    <br>
+    <input type="checkbox" id="GPS">
+    <label>GPS ($2.95/day)</label>
+
+    <br>
+    <input type="checkbox" id="roadsideAssistance">
+    <label>Roadside Assistance ($2.95/day)</label>
 </p>
 
 <p>
     Under 25
     <div>
-    <input type="radio"> No 
-    <input type="radio"> Yes
+
+    <label for="radioNo">No</label>
+    <input type="radio" id="radioNo">
+
+    <label for="radioYes">Yes</label>  
+    <input type="radio" id="radioYes" checked> 
+
     </div>  
 </p>
-    <input type="button" value="Estimate Total Cost" id="compute">
+    <input type="button" value="Estimate Total Cost" id="totalCostBtn">
     </form>
+
+    <!-- RESULTS -->
+    <p id="carRental"></p>
+    <p id="options"></p>
+    <p id="surcharge"></p>
+        <br>
+    <p id="totalCost"></p>
     </main>
 
     <footer>
