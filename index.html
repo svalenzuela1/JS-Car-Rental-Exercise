@@ -16,78 +16,97 @@
   <script src="app.js" defer></script>
 </head>
 
-<body class="p-5">
-  <div>
-    <header class="pb-5">
-      <h1>ACME Car Rental</h1>
+<body>
+  <!-- <div> -->
+    <header class="text-center p-5 bg-beige">
+      <h1 class="lora">ACME Car Rental</h1>
     </header>
 
-    <main class="pt-3">
-      <form>
-        <div>
+    <main class="text-center pt-5 bg-beige-yellow">
+      
+      <form class="form-group">
+        <div class="container bg-beige rounded">
+          <div class="row">
 
-          <div>
+          <div class="col-lg p-5">
+            
+            <div class="p-3">
         <p>
           <label for="pickupDate">Pickup Date: </label>
-          <input type="date" id="pickupDate">
+          <input type="date" id="pickupDate" class="form-control">
         </p>
+            </div>
 
+            <div class="p-3">
         <p>
           <label for="numberOfDays">Number of Days:</label>
-          <input type="number" id="numberOfDays">
+          <input type="number" id="numberOfDays" class="form-control">
         </p>
+            </div>
       </div>
 
-      <div>
+      <div class="col-lg p-5">
         <p>
+          <div>
           OPTIONS: <br>
-          <input type="checkbox" id="electronicTollTag">
-          <label>Electronic Toll Tag ($3.95/day)</label>
+        </div>
+          <div class="p-3">
+          <input type="checkbox" id="electronicTollTag" class="">
+          <label class="form-check-label">Electronic Toll Tag ($3.95/day)</label>
+        </div>
 
           <br>
-          <input type="checkbox" id="GPS">
-          <label>GPS ($2.95/day)</label>
+
+          <div>
+          <input type="checkbox" id="GPS" class="">
+          <label class="form-check-label">GPS ($2.95/day)</label>
+        </div>
 
           <br>
-          <input type="checkbox" id="roadsideAssistance">
-          <label>Roadside Assistance ($2.95/day)</label>
+
+          <div>
+          <input type="checkbox" id="roadsideAssistance" class="">
+          <label class="form-check-label" >Roadside Assistance ($2.95/day)</label>
+        </div>
         </p>
       </div>
 
-      <div>
+      <div class="col-lg p-3 align-self-center">
         <p>
           Under 25
         
 
           <label for="radioNo">No</label>
-          <input type="radio" id="radioNo">
+          <input type="radio" id="radioNo" checked>
 
           <label for="radioYes">Yes</label>
-          <input type="radio" id="radioYes" checked>
+          <input type="radio" id="radioYes" >
 
        
         </p>
-      </div>
-
-        <div>
-        <input type="button" value="Estimate Total Cost" id="totalCostBtn">
+    </div>
+  </div>
+        <div class="text-center p-5">
+        <button class="btn btn-violet" type="button" id="totalCostBtn">Estimate</button>
         </div>  
       </div>
       </form>
 
       <!-- RESULTS -->
+      <div class="text-center">
       <p id="carRental"></p>
       <p id="options"></p>
       <p id="surcharge"></p>
       <br>
       <p id="totalCost"></p>
+      </div>
     </main>
 
-    <footer>
+    <footer class="bg-beige">
 
     </footer>
 
-  </div>
+  <!-- </div> -->
   <!-- BOOTSTRAP & JQUERY JS FILES -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

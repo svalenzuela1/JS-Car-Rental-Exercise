@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Lora:ital@1&display=swap');
+
+.karla{
+    font-family: 'Karla', sans-serif;
+}
+
+.lora{
+    font-family: 'Lora', serif;
+}
+
+.bg-beige, .btn-beige{
+    background-color: #965C4C;
+    color: white;
+}
+
+.bg-beige-yellow, .btn-beige-yellow{
+    background-color: #CEA378;
+    color: white;
+}
+
+.bg-violet, .btn-violet{
+    background-color: #503140;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-yellow, .bg-yellow{
+    background-color: #C8C99F;
+}

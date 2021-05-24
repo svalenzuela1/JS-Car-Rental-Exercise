@@ -24,12 +24,12 @@ const electronicCheckbox = document.getElementById("electronicTollTag");
 
 const gpsCheckbox = document.getElementById("GPS");
     if (gpsCheckbox.checked == true) {
-        options += (2.95 * numberofDays);
+        options += (2.95 * numberOfDays);
     }
     
 const roadsideCheckbox = document.getElementById("roadsideAssistance");
     if (roadsideCheckbox.checked == true) {
-        options += (2.95 * numberofDays);
+        options += (2.95 * numberOfDays);
     }
 
     let surcharge = 0;
