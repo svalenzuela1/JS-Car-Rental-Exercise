@@ -22,7 +22,7 @@
       <h1 class="lora">ACME Car Rental</h1>
     </header>
 
-    <main class="text-center pt-5 bg-beige-yellow">
+    <main class="text-center p-5 bg-beige-yellow">
       
       <form class="form-group">
         <div class="container bg-beige rounded">
@@ -87,23 +87,25 @@
     </div>
   </div>
         <div class="text-center p-5">
-        <button class="btn btn-violet" type="button" id="totalCostBtn">Estimate</button>
+        <button class="btn btn-violet" type="button" id="totalCostBtn" data-toggle="modal" data-target="#exampleModal">Estimate</button>
         </div>  
       </div>
       </form>
 
       <!-- RESULTS -->
-      <div class="text-center">
+      
+      <div class="text-center display-4 lora">
       <p id="carRental"></p>
       <p id="options"></p>
       <p id="surcharge"></p>
       <br>
       <p id="totalCost"></p>
       </div>
+      <!-- RESULTS -->
     </main>
 
-    <footer class="bg-beige">
-
+    <footer class="text-center bg-beige p-5">
+      <p>&copy; Technology</p>
     </footer>
 
   <!-- </div> -->
